@@ -10,7 +10,7 @@ public abstract class NachrichtDekorierer implements Nachricht {
 	}
 	
 	@Override
-	public String alsText() {
-		return this.nachfolger.alsText();
+	public void drucke(String text) {
+		this.nachfolger.drucke(text);
 	}
 }

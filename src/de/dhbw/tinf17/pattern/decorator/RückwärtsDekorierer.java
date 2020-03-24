@@ -7,9 +7,8 @@ public class RückwärtsDekorierer extends NachrichtDekorierer {
 	}
 	
 	@Override
-	public String alsText() {
-		String bisherigeNachricht = super.alsText();
+	public void drucke(String bisherigeNachricht) {
 		StringBuilder builder = new StringBuilder(bisherigeNachricht);
-		return builder.reverse().toString();
+		super.drucke(builder.reverse().toString());
 	}
 }

@@ -7,8 +7,7 @@ public class CoolnessDekorierer extends NachrichtDekorierer {
 	}
 	
 	@Override
-	public String alsText() {
-		String bisherigeNachricht = super.alsText();
-		return "xXx " + bisherigeNachricht + " xXx";
+	public void drucke(String bisherigeNachricht) {
+		super.drucke("xXx " + bisherigeNachricht + " xXx");
 	}
 }
